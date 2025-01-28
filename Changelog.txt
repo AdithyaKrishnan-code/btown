@@ -1,0 +1,16 @@
+
+VERSION: 1.2.0 —-—-DATE: 08-01-2023
+1. Updated: Bootstrap v5.2.3
+-----------------------------------------
+
+
+Version 1.1
+Date: 5 July 2021
+===================================
+Update: Bootstrap v5.0.0-beta3 verstion update to Bootstrap v5.0.2
+Fixed: Minor issues.
+
+Version 1.0
+Date: 3 May 21
+===================================
+1. Initial release
