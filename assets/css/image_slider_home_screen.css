@@ -43,8 +43,8 @@
 }
 .service_icons{
 
-    height: 64px;
-    width: 67px;
+    height: 53px;
+    width: 55px;
     filter: sepia(1) saturate(2) hue-rotate(-50deg);
 }
 
