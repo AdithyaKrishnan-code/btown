@@ -12,36 +12,41 @@
 .slider-img {
     width: 100%;
     height: auto;
-    display: none;  /* Hide images by default */
+    display: none;
+    /* Hide images by default */
 }
 
 .slider-img.active {
-    display: block;  /* Show the active image */
+    display: block;
+    /* Show the active image */
 }
+
 /* ------------------------------------------------other styles------------------------------------------------------------------------------------- */
-#villa_image{
+#villa_image {
     height: 1036px;
 }
 
-#about_sec_bg{
+#about_sec_bg {
 
     background: url("https://static01.nyt.com/images/2015/05/09/world/09BRAZIL/09BRAZIL-superJumbo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.mission_icon{
+.mission_icon {
 
     filter: invert(1) brightness(100%) !important;
     height: 45px;
     width: 45px;
 }
-.banner_image{
 
-    width: 649px;
+.banner_image {
+
+    width: 870px;
     height: 939px;
 }
-.service_icons{
+
+.service_icons {
 
     height: 53px;
     width: 55px;
@@ -51,14 +56,65 @@
 #video_banner_image {
     filter: brightness(0.6) contrast(1.2);
 }
-#event_images{
+
+#event_images {
 
     width: 200px;
     height: 200px;
 }
-#pricing_images{
+
+#pricing_images {
 
     height: 285px;
     width: 285px;
 }
 
+.single-team {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-thumb {
+    /* width: 100%; */
+    height: auto;
+}
+
+.team-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    /* Dark background for readability */
+    padding: 20px;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+    color: white;
+}
+
+.single-team:hover .team-content {
+    opacity: 1;
+    /* Show text on hover */
+}
+
+.team-content h2,
+.team-content h4,
+.team-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#about_sec_images {
+    height: 461px;
+    width: 569px;
+}
+
+#atag_about {
+
+    width: 200px;
+    color: white;
+}
