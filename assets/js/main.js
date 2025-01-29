@@ -20,7 +20,7 @@
     centeredSlides: true,
     speed: 1000, // Transition speed (1s)
     autoplay: {
-      delay: 500000, // 5 seconds between slides
+      delay: 5000, // 5 seconds between slides
       disableOnInteraction: false // Continue autoplay after manual interaction
     },
     loop: true,
