@@ -164,9 +164,9 @@ only screen and (max-width: 767px) {
     height: 370px;
   } */
 
-  #villa_image {
+  /* #villa_image {
     height: 520px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 479px) {
