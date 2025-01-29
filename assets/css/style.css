@@ -161,7 +161,7 @@ only screen and (max-width: 767px) {
 
   .banner_image {
     width: 649px;
-    height: 529px;
+    height: 370px;
   }
 
   #villa_image {
@@ -1990,7 +1990,7 @@ only screen and (max-width: 767px) {
 
 @media only screen and (max-width: 479px) {
   .slider-section .slingle-slider .slider-right .slider-images {
-    width: 260px;
+    width: 100%;
     margin: 0 auto;
   }
 }
