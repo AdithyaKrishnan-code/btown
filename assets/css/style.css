@@ -50,6 +50,8 @@
   box-sizing: border-box;
 }
 
+
+
 html,
 body {
   height: 100%;
@@ -164,7 +166,6 @@ only screen and (max-width: 767px) {
 
   #villa_image {
     height: 520px;
-    width: 255px;
   }
 }
 
@@ -747,6 +748,15 @@ only screen and (max-width: 767px) {
 .bg-name-primary {
   background-color: #07332f;
 }
+
+#about_us_top_div_bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://blenderartists.org/uploads/default/original/4X/e/e/d/eed467e3bb47238f060a37ded7955dacc21f5daa.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .bg-name-secondary {
   background-color: #1f3f37;
