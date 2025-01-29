@@ -234,7 +234,18 @@ only screen and (min-width: 1200px) and (max-width: 1599px) {
   }
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 320px) {
+
+  .banner_image {
+    width: 870px;
+    height: 287px;
+  }
+
+  #villa_image {
+    height: 317px;
+  }
+}
+@media only screen and (max-width: 375px) {
 
   .banner_image {
     width: 870px;
@@ -243,6 +254,29 @@ only screen and (min-width: 1200px) and (max-width: 1599px) {
 
   #villa_image {
     height: 458px;
+  }
+}
+@media only screen and (max-width: 475px) {
+
+  .banner_image {
+    width: 870px;
+    height: 287px;
+  }
+
+  #villa_image {
+    height: 458px;
+  }
+}
+@media only screen and (max-width: 769px) {
+
+  .banner_image {
+    width: 870px;
+    height: 287px;
+  }
+
+  #villa_image {
+    height: 317px;
+    width: 100%;
   }
 }
 
