@@ -802,9 +802,10 @@ only screen and (max-width: 767px) {
 #properties_top_div_bg {
 
   height: 575px;
-  background-image: url(https://www.kayak.com.au/news/wp-content/uploads/sites/23/2019/03/rainforesthero.jpg);
+  background-image: url(https://res.cloudinary.com/dwa6fuv2x/w_2000,h_1200,c_fit/auto-mapping-folder/2020/07/Luxury-interior-design.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
 }
 

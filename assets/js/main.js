@@ -40,7 +40,81 @@
       }
     }
   });
+  // ---------------------------------properties slider----------------------------------------------
 
+  document.addEventListener("DOMContentLoaded", function () {
+    let imageSets = {
+      "properties_tabs1": [
+        "https://vishwakarmainteriors.com/wp-content/uploads/2022/08/hero_image_about-1.png",
+        "https://asset.skoiy.com/9b80a6f781ff336f/a8csx84ab4fj.jpg",
+        "https://res.cloudinary.com/dwa6fuv2x/w_2000,h_1200,c_fit/auto-mapping-folder/2020/07/Luxury-interior-design.jpg"
+      ],
+      "properties_tabs2": [
+        "https://www.manjooran.com/wp-content/uploads/2016/03/apartments-in-kochi.jpg",
+        "https://echoresorts.com/storage/media/resorts/bungaraya/villas/36/01HXR114N53NAPFSCJEE4SNMGP.jpg",
+        "https://mayatar.com/wp-content/uploads/2022/05/UrbanX-1.jpg"
+      ],
+      "properties_tabs3": [
+        "https://corbettfunresort.in/images/room/poll-cottage-image1.jpeg",
+        "https://st.hzcdn.com/simgs/pictures/pools/contemporary-pool-envi-interior-design-studio-img~b501ddab024b192a_14-4206-1-a288608.jpg",
+        "https://margaritabravo.com/wp-content/uploads/2022/10/luxury-2.jpg"
+      ],
+      "properties_tabs4": [
+        "https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/images/methode/2017/06/06/677a2be4-4a71-11e7-a842-aa003dd7e62a_1280x720_185554.JPG?itok=YdiS3qKf",
+        "https://kreafolk.com/cdn/shop/articles/BlogThumbnail_Mansion_Interior_Design.webp?crop=center&height=1200&v=1730205858&width=1200",
+        "https://i.ytimg.com/vi/MAN9m-ixvSA/maxresdefault.jpg"
+      ]
+    };
+
+    // Different speed intervals for each property tab
+    let speedIntervals = {
+      "properties_tabs1": 2000,  // Changes every 2 seconds
+      "properties_tabs2": 2000,  // Changes every 2 seconds
+      "properties_tabs3": 2000,  // Changes every 2 seconds
+      "properties_tabs4": 2000   // Changes every 2 seconds
+    };
+
+    function startImageRotation(elementId) {
+      let anchor = document.querySelector(`#${elementId} .blog-thumb a img`);
+      if (!anchor) return;
+
+      let images = imageSets[elementId];
+      let index = 0;
+      let interval = speedIntervals[elementId]; // Get unique speed for each tab
+
+      let rotationInterval;
+
+      // Function to start image rotation
+      function rotateImages() {
+        rotationInterval = setInterval(() => {
+          index = (index + 1) % images.length;
+          anchor.style.opacity = "0"; // Fade out
+          setTimeout(() => {
+            anchor.src = images[index];
+            anchor.style.opacity = "1"; // Fade in
+          }, 1000);
+        }, interval);
+      }
+
+      // Stop the rotation when the cursor leaves the image
+      anchor.addEventListener('mouseenter', () => {
+        rotateImages();
+      });
+
+      anchor.addEventListener('mouseleave', () => {
+        clearInterval(rotationInterval);
+      });
+    }
+
+    Object.keys(imageSets).forEach(startImageRotation);
+  });
+
+
+
+
+
+
+  // -------------------------------------------------------------------------------
 
   /*---------------------------
     Team Carousel Activation
