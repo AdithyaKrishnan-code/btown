@@ -68,10 +68,10 @@
 
     // Different speed intervals for each property tab
     let speedIntervals = {
-      "properties_tabs1": 2000,  // Changes every 2 seconds
-      "properties_tabs2": 2000,  // Changes every 2 seconds
-      "properties_tabs3": 2000,  // Changes every 2 seconds
-      "properties_tabs4": 2000   // Changes every 2 seconds
+      "properties_tabs1": 5000,  // Changes every 2 seconds
+      "properties_tabs2": 5000,  // Changes every 2 seconds
+      "properties_tabs3": 5000,  // Changes every 2 seconds
+      "properties_tabs4": 5000   // Changes every 2 seconds
     };
 
     function startImageRotation(elementId) {
@@ -96,23 +96,26 @@
         }, interval);
       }
 
-      // Stop the rotation when the cursor leaves the image
-      anchor.addEventListener('mouseenter', () => {
-        rotateImages();
-      });
+      // Check screen width for mobile/tablet
+      const isMobileOrTablet = window.innerWidth <= 1024;  // Detect if it's a mobile or tablet screen
 
-      anchor.addEventListener('mouseleave', () => {
-        clearInterval(rotationInterval);
-      });
+      // On mobile/tablet, automatically rotate the images
+      if (isMobileOrTablet) {
+        rotateImages();
+      } else {
+        // On desktop, start rotation on hover
+        anchor.addEventListener('mouseenter', () => {
+          rotateImages();
+        });
+
+        anchor.addEventListener('mouseleave', () => {
+          clearInterval(rotationInterval);
+        });
+      }
     }
 
     Object.keys(imageSets).forEach(startImageRotation);
   });
-
-
-
-
-
 
   // -------------------------------------------------------------------------------
 
