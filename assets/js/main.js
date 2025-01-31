@@ -97,7 +97,7 @@
       }
 
       // Check screen width for mobile/tablet
-      const isMobileOrTablet = window.innerWidth <= 1024;  // Detect if it's a mobile or tablet screen
+      const isMobileOrTablet = window.innerWidth <= 768;  // Detect if it's a mobile or tablet screen
 
       // On mobile/tablet, automatically rotate the images
       if (isMobileOrTablet) {
