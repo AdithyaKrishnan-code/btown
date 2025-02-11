@@ -26,12 +26,6 @@
     height: 812px;
 }
 
-#logo_btown {
-    max-height: 200px; /* Adjust according to your navbar height */
-    /* width: auto; */
-    display: block;
-}
-
 #logo_footer{
 
     width: 248px;
