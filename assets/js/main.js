@@ -68,10 +68,10 @@
 
     // Different speed intervals for each property tab
     let speedIntervals = {
-      "properties_tabs1": 5000,  // Changes every 2 seconds
-      "properties_tabs2": 5000,  // Changes every 2 seconds
-      "properties_tabs3": 5000,  // Changes every 2 seconds
-      "properties_tabs4": 5000   // Changes every 2 seconds
+      "properties_tabs1": 4000,
+      "properties_tabs2": 4000,
+      "properties_tabs3": 4000,
+      "properties_tabs4": 4000
     };
 
     function startImageRotation(elementId) {
@@ -81,41 +81,71 @@
       let images = imageSets[elementId];
       let index = 0;
       let interval = speedIntervals[elementId]; // Get unique speed for each tab
-
       let rotationInterval;
+
+      // Function to change the image instantly
+      function changeImage() {
+        index = (index + 1) % images.length;
+        anchor.style.opacity = "0"; // Fade out
+        setTimeout(() => {
+          anchor.src = images[index];
+          anchor.style.opacity = "1"; // Fade in
+        }, 200);
+      }
 
       // Function to start image rotation
       function rotateImages() {
-        rotationInterval = setInterval(() => {
-          index = (index + 1) % images.length;
-          anchor.style.opacity = "0"; // Fade out
-          setTimeout(() => {
-            anchor.src = images[index];
-            anchor.style.opacity = "1"; // Fade in
-          }, 1000);
-        }, interval);
+        changeImage(); // First change happens immediately
+        rotationInterval = setInterval(changeImage, interval);
       }
 
       // Check screen width for mobile/tablet
-      const isMobileOrTablet = window.innerWidth <= 768;  // Detect if it's a mobile or tablet screen
+      const isMobileOrTablet = window.innerWidth <= 768;
 
       // On mobile/tablet, automatically rotate the images
       if (isMobileOrTablet) {
         rotateImages();
       } else {
-        // On desktop, start rotation on hover
+        // On desktop, start rotation immediately on hover
         anchor.addEventListener('mouseenter', () => {
-          rotateImages();
+          if (!rotationInterval) {
+            rotateImages();
+          }
         });
 
         anchor.addEventListener('mouseleave', () => {
           clearInterval(rotationInterval);
+          rotationInterval = null;
         });
       }
     }
 
     Object.keys(imageSets).forEach(startImageRotation);
   });
+
+
+  // -------------------------------------------------------------------------------
+  // --------------------------------play button cottage-----------------------------------------------
+  document.addEventListener("DOMContentLoaded", function () {
+    let video = document.getElementById("service_video");
+    let playBtn = document.getElementById("play_btn");
+
+    playBtn.addEventListener("click", function () {
+      if (video.paused) {
+        video.play();
+        playBtn.style.opacity = "0"; // Hide button when playing
+      } else {
+        video.pause();
+        playBtn.style.opacity = "1"; // Show button when paused
+      }
+    });
+  });
+  // -------------------------------------------------image slider in properties------------------------------------------------
+
+
+
+  // -------------------------------------------------------------------------------------------------
+
 
   // -------------------------------------------------------------------------------
 
