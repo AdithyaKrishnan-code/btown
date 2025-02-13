@@ -1595,7 +1595,8 @@ only screen and (max-width: 767px) {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu>ul>li>a {
-    padding: 26px 22px;
+    padding: 20px 26px;
+    font-size: 14px;
   }
 }
 
@@ -3924,6 +3925,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .service-sector-wrapper .service-sector-department {
     max-width: 660px;
+    padding-top: 20px;
   }
 }
 

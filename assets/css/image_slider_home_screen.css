@@ -1107,6 +1107,7 @@
     }
 }
 
+/* -----------------------------------navbar respondsiveness----------------------------------------------- */
 @media screen and (max-width: 1440px) {
 
     .carousel .list .item .content2 {
@@ -1121,7 +1122,16 @@
         color: #ffffff;
         text-shadow: 0 5px 10px #0004;
     }
+
+    #villa_image {
+        height: 989px;
+        width: 713px;
+    }
 }
+
+
+
+
 
 /* ------------------------------------------------------------------------- */
 
