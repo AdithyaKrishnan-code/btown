@@ -55,22 +55,23 @@
                 <div class="header-wrapper">
 
                     <!-- Header Logo Start -->
-                    <div class="header-logo">
-                        <a href="index.html"><img src="assets/images/photo_2025-02-10_16-00-14-removebg-preview.png" alt="Logo" id="logo_btown"></a>
+                    <div class="header-logo" id="logo_btown">
+                        <a href="index.html"><img src="assets/images/photo_2025-02-10_16-00-14-removebg-preview.png" alt="Logo" ></a>
                     </div>
                     <!-- Header Logo End -->
 
                     <!-- Header Menu Start -->
-                    <div class="main-menu d-none d-lg-flex">
+                    <div class="main-menu d-none d-lg-flex" >
                         <ul>
-                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a class="active" href="index.html" id="button_home">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li class="has-children"><a href="properties.html">Properties</a>
-                                <!-- <ul class="sub-menu">
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
-                                </ul> -->
+                                <ul class="sub-menu" id="sub_menu_properties">
+                                    <li><a href="blog-grid.html">Standard Cottages</a></li>
+                                    <li><a href="blog-details.html">Deluxe Cottages</a></li>
+                                    <li><a href="blog-details-sidebar.html">Private Pool Cottages</a></li>
+                                    <li><a href="blog-details-sidebar.html">Mansions</a></li>
+                                </ul>
                             </li>
                             <li class="has-children">
                                 <a href="gallery.html">Gallery</a>
@@ -81,7 +82,7 @@
                                 </ul> -->
                             </li>
                             <li class="has-children">
-                                <a href="#">Events</a>
+                                <a href="#">Facilities</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a href="blog-grid.html">Blog Grid</a></li>
                                     <li><a href="blog-details.html">Blog Details</a></li>
@@ -119,7 +120,7 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Start -->
-    <div class="section breadcrumb-section bg-name-primary" id="about_us_top_div_bg">
+    <div class="section breadcrumb-section bg-name-primary" id="about_us_top_div_bg"  style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/DSC02260.JPG'); background-size: cover; background-position: center;">
         <div class="layer shape-1"></div>
         <div class="container section-padding">
             <div class="row">
@@ -301,7 +302,7 @@
     <!-- Service Section End -->
 
     <!-- About Section Start -->
-    <div class="section about-bg">
+    <div class="section about-bg" style="background-image: url(assets/images/photo1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -379,7 +380,7 @@
                         <!-- Team Thumb Start -->
                         <div class="team-thumb">
                             <img class="fit-image"
-                                src="https://3rdeye.samadhiretreats.com/upload/offers/173238665944115.jpg"
+                                src="assets/images/DSC01372.JPG"
                                 alt="Team Image" id="about_sec_images">
                         </div>
                         <!-- Team Thumb End -->
@@ -392,7 +393,7 @@
                                 standard.</p> -->
                             <div class="social-share">
                                 <a href="" id="atag_about"><span class="social-title"
-                                        style="text-align: center;">Explore</span></a>
+                                        style="text-align: center;">Standard Cottages</span></a>
 
                             </div>
                         </div>
@@ -411,7 +412,7 @@
                         <!-- Team Thumb Start -->
                         <div class="team-thumb">
                             <img class="fit-image"
-                                src="https://www.uniqhotels.com/media/current_blog/MERUSAKA_Nusa_Dua.jpg"
+                                src="assets/images/DSC01413.JPG"
                                 alt="Team Image" id="about_sec_images">
                         </div>
                         <!-- Team Thumb End -->
@@ -424,7 +425,7 @@
                                 standard.</p> -->
                             <div class="social-share">
                                 <a href="" id="atag_about"><span class="social-title"
-                                        style="text-align: center;">Explore</span></a>
+                                        style="text-align: center;">Private Pool Cottages</span></a>
 
                             </div>
                         </div>
@@ -455,7 +456,7 @@
                             <!-- <p>Lorem Ipsum simply dummy text printing and typesetng industry has been industryS
                                 standard.</p> -->
                             <div class="social-share" id="button_about">
-                                <a href=""><span class="social-title" style="text-align: center;">Explore</span></a>
+                                <a href=""><span class="social-title" style="text-align: center;">Mansions</span></a>
 
                             </div>
                         </div>
@@ -474,7 +475,7 @@
                         <!-- Team Thumb Start -->
                         <div class="team-thumb">
                             <img class="fit-image"
-                                src="https://www.uniqhotels.com/media/current_blog/MERUSAKA_Nusa_Dua.jpg"
+                                src="assets/images/DSC02225.JPG"
                                 alt="Team Image" id="about_sec_images">
                         </div>
                         <!-- Team Thumb End -->
@@ -487,7 +488,7 @@
                                 standard.</p> -->
                             <div class="social-share">
                                 <a href="" id="atag_about"><span class="social-title"
-                                        style="text-align: center;">Explore</span></a>
+                                        style="text-align: center;">Deuluxe Cottages</span></a>
 
                             </div>
                         </div>
@@ -615,7 +616,7 @@
     <!-- Appoinment Section End -->
 
     <!-- Footer Section Start -->
-        <footer class="section footer-section">
+    <footer class="section footer-section">
         <!-- Footer Top Start -->
         <div class="footer-top bg-name-primary section-padding">
             <!-- Shape Start -->
@@ -627,7 +628,7 @@
                     <div class="col-12 col-md-6 col-lg-3 col-xl-4 m-b-40" data-aos="fade-up" data-aos-duration="1000">
                         <div class="single-footer-widget">
                             <div class="footer-logo m-b-20">
-                                <a href="index.html"><img src="     " alt="Logo"></a>
+                                <a href="index.html"><img src="assets/images/photo_2025-02-10_16-00-14-removebg-preview.png" alt="Logo" id="logo_footer"></a>
                             </div>
                             <p class="desc-content m-b-35">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry.has been since the printer took.</p>

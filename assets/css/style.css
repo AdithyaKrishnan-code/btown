@@ -814,7 +814,6 @@ only screen and (max-width: 767px) {
 #properties_top_div_bg {
 
   height: 575px;
-  background-image: url(https://res.cloudinary.com/dwa6fuv2x/w_2000,h_1200,c_fit/auto-mapping-folder/2020/07/Luxury-interior-design.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -856,7 +855,7 @@ only screen and (max-width: 767px) {
 
 #about_us_top_div_bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://blenderartists.org/uploads/default/original/4X/e/e/d/eed467e3bb47238f060a37ded7955dacc21f5daa.jpeg);
+    url("../assets/images/DSC01337.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1676,7 +1675,7 @@ only screen and (max-width: 767px) {
   transition: all 0.3s ease-in-out;
   z-index: 9;
   padding-left: 0;
-  border-bottom: 3px solid #f7a582;
+  border-bottom: 3px solid #000000;
 }
 
 .main-menu ul .has-children>.sub-menu>li {
@@ -1695,7 +1694,7 @@ only screen and (max-width: 767px) {
 }
 
 .main-menu ul .has-children>.sub-menu>li>a:hover {
-  color: #f7a582;
+  color: #000000;
   padding-left: 30px;
 }
 
@@ -5070,16 +5069,16 @@ only screen and (max-width: 767px) {
   color: #f7a582;
   /* Text color remains visible */
   border: 2px solid white;
-  padding: 10px;
+  padding: 17px;
   display: inline-block;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  width: 176px;
-  height: 56px;
+  width: 242px;
+  height: 70px;
 }
 
 .team-bg-seashell.single-team .social-share:hover {
-  background: #f7a582;
+  background: #0000005a;
   /* Background color on hover */
   border: 2px solid #ffffff;
   /* Add border on hover */
@@ -5241,7 +5240,7 @@ only screen and (max-width: 767px) {
 .single-team .social-share {
   position: absolute;
   bottom: 101px;
-  right: 58px;
+  right: 22px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
